@@ -1,0 +1,125 @@
+html {
+  font-size: 65.5%;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+}
+.page {
+  margin: 0;
+
+  background: rgb(201, 24, 108);
+  background: rgb(201, 24, 108);
+  background: radial-gradient(
+    circle,
+    rgba(201, 24, 108, 0.8127626050420168) 19%,
+    rgba(233, 148, 214, 0.6867121848739496) 100%
+  );
+}
+
+.container-menu {
+  width: 100%;
+  height: 12vh;
+  background: rgb(40, 113, 223);
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: black solid 2px;
+}
+
+.logo {
+  margin: auto 0 auto 0;
+}
+
+.nav-container {
+  position: relative;
+
+  top: 100%;
+  height: auto;
+  width: 100%;
+  left: -100%;
+}
+.logo {
+  width: 50%;
+  position: absolute;
+  top: -40%;
+  left: 0;
+}
+
+.nav-container ul {
+  visibility: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-container ul li {
+  visibility: inherit;
+  list-style: none;
+  display: flex;
+  height: 10vh;
+  font-size: 2.6rem;
+  background: brown;
+
+  border-bottom: 2px solid black;
+
+  align-items: center;
+}
+
+.nav-container ul li a {
+  visibility: inherit;
+  position: relative;
+  text-decoration: none;
+  color: black;
+
+  font-stretch: semi-expanded;
+  margin: auto auto auto auto;
+}
+
+.header picture {
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  position: relative;
+  height: 30vh;
+  margin: 12vh auto 12vh auto;
+}
+.filtro {
+  position: absolute;
+  background: rgba(35, 47, 223, 0.514);
+  height: 102%;
+  width: 100%;
+  border-bottom: 2px solid black;
+  z-index: 10;
+}
+
+.seccion {
+  width: 90%;
+  font-size: 2rem;
+  margin: auto auto 30px auto;
+  border-radius: 2px;
+  border: 2px solid black;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.384);
+}
+
+.seccion h3 {
+  color: rgb(0, 0, 0);
+  text-shadow: rgb(18, 255, 38) 2px 2px 2px;
+}
+
+.aprendiendo {
+  background-image: url("./imges/learning.png");
+  height: auto;
+  width: auto;
+  position: absolute;
+  z-index: 10;
+}
