@@ -45,7 +45,25 @@ img {
   height: auto;
   width: 100%;
   left: -100%;
+  transition: 0.34s ease;
+  z-index: 40;
 }
+
+.nav-container_active {
+  left: 0;
+}
+
+.active-nav {
+  background: none;
+  height: 6vh;
+  width: 6vh;
+  font-size: 4rem;
+
+  position: absolute;
+  right: 10px;
+  top: 25%;
+}
+
 .logo {
   width: 50%;
   position: absolute;
@@ -88,17 +106,9 @@ img {
 }
 
 .header {
-  position: relative;
   height: 30vh;
   margin: 12vh auto 12vh auto;
-}
-.filtro {
-  position: absolute;
-  background: rgba(35, 47, 223, 0.514);
-  height: 102%;
-  width: 100%;
-  border-bottom: 2px solid black;
-  z-index: 10;
+  box-shadow: black 2px 0 10px 10px;
 }
 
 .seccion {
@@ -107,6 +117,7 @@ img {
   margin: auto auto 30px auto;
   border-radius: 2px;
   border: 2px solid black;
+  box-shadow: black 0px 10px 10px 0px;
   padding: 10px;
   background: rgba(255, 255, 255, 0.384);
 }
@@ -115,6 +126,10 @@ img {
   color: rgb(0, 0, 0);
   text-shadow: rgb(18, 255, 38) 2px 2px 2px;
 }
+.seccion picture img {
+  border: black 2px solid;
+  box-shadow: black 0 0 10px 1px;
+}
 
 .aprendiendo {
   background-image: url("./imges/learning.png");
@@ -122,4 +137,30 @@ img {
   width: auto;
   position: absolute;
   z-index: 10;
+}
+
+.redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.redes div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.redes div img {
+  width: 50%;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  height: 100px;
+  background: rgb(42, 42, 224);
+}
+
+.quien-hizo {
+  text-align: center;
 }
